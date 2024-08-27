@@ -38,6 +38,7 @@ app.use(function (err, req, res, next) {
 
 // Define a port number
 const PORT = process.env.PORT || 3000;
+const word = "woes";
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
