@@ -1,0 +1,556 @@
+<%- include('Header') %>
+<header class="home-video-container">
+  <div class="centerHome">
+    <div class="header-title home">
+      <div class="w-hidden-small w-hidden-tiny container-btn-scroll home">
+        <div class="boton navflechas">
+          <a class="bajar" href="#sezione2" id="scrollDownVideoBtn">
+            <span class="icon-wrap"></span>
+            <h3>SCROLL</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="home-video-overlay-plus"></div>
+  <div class="home-video-overlay"></div>
+  <div class="home-video">
+    <div class="w-hidden-medium w-hidden-small w-hidden-tiny okvideo">
+      <div class="covervid-wrapper">
+        <video
+          class="covervid-video"
+          autoplay
+          loop
+          muted
+          poster="img/huhnseal-intro.gif"
+          title="Planilandia Agencia Creativa"
+        >
+          <source src="huhnseal-inro-video.mp4" type="video/mp4" />
+          <source src="huhnseal-inro-video.webm" type="video/webm" />
+        </video>
+      </div>
+    </div>
+    <div class="w-hidden-main novideo intro"></div>
+  </div>
+</header>
+<div class="home-video-force-padding"></div>
+<div id="sezione2"></div>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $("#scrollDownVideoBtn").on("click", function (e) {
+      e.preventDefault();
+      var target = this.hash;
+      $target = $(target);
+      $("html, body")
+        .stop()
+        .animate(
+          {
+            scrollTop: $target.offset().top,
+          },
+          900,
+          "swing",
+          function () {
+            window.location.hash = target;
+          }
+        );
+    });
+  });
+</script>
+<!-- search -->
+<div class="search">
+  <div class="container">
+    <form
+      name="search_form"
+      action="https://www.huhnseal.com/products/search"
+      method="get"
+    >
+      <input type="text" name="p" value="" placeholder="Search product" />
+      <button
+        type="submit"
+        title="Search by product code / product name"
+        onclick="if(document.search_form.p.value != '') { return true; } else { alert('Enter a search parameter'); return false; }"
+      ></button>
+    </form>
+  </div>
+</div>
+<div class="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="blk blk-txt txt-blue">
+          <h1 style="text-align: center">
+            Mechanical seals manufacturer for industries
+          </h1>
+          <p style="font-weight: 400; text-align: center">
+            We at <strong>CHEM-PROOF</strong> design and manufacture
+            <strong>mechanical seals</strong> for rotating equipment.<br />Engineered
+            solutions, Aftermarket exclusivity for the OEM&rsquo;s, personalized
+            logistic plans.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row spacer100">
+      <div class="col-xs-12">
+        <div class="blk blk-title txt-center">
+          <h2>News</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="owl-carousel owl-carousel-news">
+    <div class="item">
+      <div class="blk blk-img">
+        <img
+          src="upload/blocchi/cr_X2744fotoJPG_560x2301-1X_mechanical-seals-for-mixers.jpg"
+          alt="Mechanical seals for mixers: a guide"
+        />
+      </div>
+      <div class="blk blk-txt">
+        <p class="date">02/08/2024</p>
+        <a
+          href="news/2744/mechanical-seals-for-mixers-a-guide.html#meccanotecnica"
+          title="Mechanical seals for mixers: a guide"
+          class="news-title"
+          >Mechanical seals for mixers: a guide</a
+        >
+        <p>
+          Mechanical seals are a crucial element in the modern industrial
+          landscape, playing a key role in maintaining the efficiency and safety
+          of rotary machi...
+        </p>
+        <a
+          href="news/2744/mechanical-seals-for-mixers-a-guide.html"
+          title="Mechanical seals for mixers: a guide | read more"
+          class="read-more"
+          >read more</a
+        >
+      </div>
+    </div>
+    <div class="item">
+      <div class="blk blk-img">
+        <img
+          src="upload/blocchi/cr_X2742fotoJPG_560x2301-1X_minexpo.jpg"
+          alt="MINExpo 2024"
+        />
+      </div>
+      <div class="blk blk-txt">
+        <p class="date">25/07/2024</p>
+        <a
+          href="news/2742/minexpo-2024.html#meccanotecnica"
+          title="MINExpo 2024"
+          class="news-title"
+          >MINExpo 2024</a
+        >
+        <p>
+          We at CHEM-PROOF will be present at MINExpo 2024, the world's premier
+          event for the mining industry, bringing together professionals,
+          experts and decisi...
+        </p>
+        <a
+          href="news/2742/minexpo-2024.html"
+          title="MINExpo 2024 | read more"
+          class="read-more"
+          >read more</a
+        >
+      </div>
+    </div>
+    <div class="item">
+      <div class="blk blk-img">
+        <img
+          src="upload/blocchi/cr_X2740fotoJPG_560x2301-1X_ANUGA-1.jpg"
+          alt="ANUGA 2024"
+        />
+      </div>
+      <div class="blk blk-txt">
+        <p class="date">12/02/2024</p>
+        <a
+          href="news/2740/anuga-2024.html#meccanotecnica"
+          title="ANUGA 2024"
+          class="news-title"
+          >ANUGA 2024</a
+        >
+        <p>
+          Anuga FoodTec is the most important information and business platform
+          for new concepts and innovative developments in the international food
+          and bever...
+        </p>
+        <a
+          href="news/2740/anuga-2024.html"
+          title="ANUGA 2024 | read more"
+          class="read-more"
+          >read more</a
+        >
+      </div>
+    </div>
+    <div class="item">
+      <div class="blk blk-img">
+        <img
+          src="upload/blocchi/cr_X2731fotoJPG_560x2301-1X_cr-X1872fotoPNG-1000x10001-1X-bc.png"
+          alt="Mechanical seals for high-pressure applications: analysis and solutions"
+        />
+      </div>
+      <div class="blk blk-txt">
+        <p class="date">16/11/2023</p>
+        <a
+          href="news/2731/mechanical-seals-for-high-pressure-applications-analysis-and-solutions.html#meccanotecnica"
+          title="Mechanical seals for high-pressure applications: analysis and solutions"
+          class="news-title"
+          >Mechanical seals for high-pressure applications: analysis and
+          solutions</a
+        >
+        <p>
+          Mechanical seals for high-pressure applications play a key role in
+          ensuring safety and efficiency in many industries. These seals,
+          designed to withsta...
+        </p>
+        <a
+          href="news/2731/mechanical-seals-for-high-pressure-applications-analysis-and-solutions.html"
+          title="Mechanical seals for high-pressure applications: analysis and solutions | read more"
+          class="read-more"
+          >read more</a
+        >
+      </div>
+    </div>
+    <div class="item">
+      <div class="blk blk-img">
+        <img
+          src="upload/blocchi/cr_X2730fotoJPG_560x2301-1X_Cibus-Banner-2.jpg"
+          alt="Cibus Tec 2023"
+        />
+      </div>
+      <div class="blk blk-txt">
+        <p class="date">26/09/2023</p>
+        <a
+          href="news/2730/cibus-tec-2023.html#meccanotecnica"
+          title="Cibus Tec 2023"
+          class="news-title"
+          >Cibus Tec 2023</a
+        >
+        <p>
+          With its 80 year history for passion in pioneering solutions, Cibus
+          Tec is one of the most innovative food and beverage technology
+          exhibitions.A highl...
+        </p>
+        <a
+          href="news/2730/cibus-tec-2023.html"
+          title="Cibus Tec 2023 | read more"
+          class="read-more"
+          >read more</a
+        >
+      </div>
+    </div>
+    <div class="item">
+      <div class="blk blk-img">
+        <img
+          src="upload/blocchi/cr_X2726fotoJPG_560x2301-1X_processexpo.jpg"
+          alt="Pack Expo 2023"
+        />
+      </div>
+      <div class="blk blk-txt">
+        <p class="date">21/07/2023</p>
+        <a
+          href="news/2726/pack-expo-2023.html#meccanotecnica"
+          title="Pack Expo 2023"
+          class="news-title"
+          >Pack Expo 2023</a
+        >
+        <p>
+          More than 40 vertical industries are represented at PACK EXPO Las
+          Vegas.Buyers from big, multi-national companies to small businesses
+          who are starting...
+        </p>
+        <a
+          href="news/2726/pack-expo-2023.html"
+          title="Pack Expo 2023 | read more"
+          class="read-more"
+          >read more</a
+        >
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row spacer100">
+      <div class="col-xs-12">
+        <div class="blk blk-title txt-center roboto-fix">
+          <h2>Products</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="owl-carousel owl-carousel-prodotti">
+  <div class="item">
+    <a href="products/mechanical-seals/2575/xgxh.html" title="XG/XH">
+      <img
+        src="upload/blocchi/cr_X2575fotoPNG_1000x10001-1X_Cartdridge-XG-XH.png"
+        alt="XG/XH"
+      />
+      <div class="txt">XG/XH</div>
+    </a>
+  </div>
+  <div class="item">
+    <a href="products/mechanical-seals/1866/bf-ap.html" title="BF-AP">
+      <img
+        src="upload/blocchi/cr_X1866fotoPNG_1000x10001-1X_bf_ap.png"
+        alt="BF-AP"
+      />
+      <div class="txt">BF-AP</div>
+    </a>
+  </div>
+  <div class="item">
+    <a href="products/mechanical-seals/1863/bfba.html" title="BF/BA">
+      <img
+        src="upload/blocchi/cr_X1863fotoPNG_1000x10001-1X_bf_ba.png"
+        alt="BF/BA"
+      />
+      <div class="txt">BF/BA</div>
+    </a>
+  </div>
+  <div class="item">
+    <a href="products/mechanical-seals/1862/bfs.html" title="BFS">
+      <img
+        src="upload/blocchi/cr_X1862fotoPNG_1000x10001-1X_bfs.png"
+        alt="BFS"
+      />
+      <div class="txt">BFS</div>
+    </a>
+  </div>
+  <div class="item">
+    <a href="products/mechanical-seals/1805/es.html" title="ES">
+      <img src="upload/blocchi/cr_X1805fotoPNG_1000x10001-1X_es.png" alt="ES" />
+      <div class="txt">ES</div>
+    </a>
+  </div>
+  <div class="item">
+    <a href="products/mechanical-seals/2190/edh.html" title="EDH">
+      <img
+        src="upload/blocchi/cr_X2190fotoPNG_1000x10001-1X_edh.png"
+        alt="EDH"
+      />
+      <div class="txt">EDH</div>
+    </a>
+  </div>
+  <div class="item">
+    <a href="products/mechanical-seals/2571/hlml.html" title="HL/ML">
+      <img
+        src="upload/blocchi/cr_X2571fotoPNG_1000x10001-1X_Cartdridge-HM-LM.png"
+        alt="HL/ML"
+      />
+      <div class="txt">HL/ML</div>
+    </a>
+  </div>
+  <div class="item">
+    <a href="products/mechanical-seals/2572/glrd-921-b.html" title="GLRD 921-B">
+      <img
+        src="upload/blocchi/cr_X2572fotoPNG_1000x10001-1X_GLRD-921-B.png"
+        alt="GLRD 921-B"
+      />
+      <div class="txt">GLRD 921-B</div>
+    </a>
+  </div>
+  <div class="item">
+    <a href="products/mechanical-seals/1860/edp.html" title="EDP">
+      <img
+        src="upload/blocchi/cr_X1860fotoPNG_1000x10001-1X_edp.png"
+        alt="EDP"
+      />
+      <div class="txt">EDP</div>
+    </a>
+  </div>
+  <div class="item">
+    <a href="products/mechanical-seals/1872/bc.html" title="BC">
+      <img src="upload/blocchi/cr_X1872fotoPNG_1000x10001-1X_bc.png" alt="BC" />
+      <div class="txt">BC</div>
+    </a>
+  </div>
+  <div class="item">
+    <a href="products/mechanical-seals/2574/glrd-925-b.html" title="GLRD 925-B">
+      <img
+        src="upload/blocchi/cr_X2574fotoPNG_1000x10001-1X_GLRD-925-B.png"
+        alt="GLRD 925-B"
+      />
+      <div class="txt">GLRD 925-B</div>
+    </a>
+  </div>
+  <div class="item">
+    <a href="products/mechanical-seals/2189/esh.html" title="ESH">
+      <img
+        src="upload/blocchi/cr_X2189fotoPNG_1000x10001-1X_esh.png"
+        alt="ESH"
+      />
+      <div class="txt">ESH</div>
+    </a>
+  </div>
+</div>
+<div class="container">
+  <div class="container">
+    <div class="row spacer100">
+      <div class="col-xs-12">
+        <div class="blk blk-title txt-center">
+          <h2>Industries</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="owl-carousel owl-carousel-mercati">
+  <div class="item">
+    <a href="industries/1777/food-beverage.html" title="Food &amp; Beverage">
+      <img
+        src="upload/blocchi/cr_X1777fotoJPG_600x4501-1X_hygienic.jpg"
+        alt="Mechanical Seals for Hygienic uses"
+      />
+      <div class="txt">
+        <div class="txt-t">
+          <div class="txt-tc">Food &amp; Beverage</div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="item">
+    <a href="industries/1876/mining-slurry.html" title="Mining &amp; Slurry">
+      <img
+        src="upload/blocchi/cr_X1876fotoJPG_600x4501-1X_mining_2.jpg"
+        alt="Mining &amp; Slurry"
+      />
+      <div class="txt">
+        <div class="txt-t">
+          <div class="txt-tc">Mining &amp; Slurry</div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="item">
+    <a href="industries/1877/pulp-paper.html" title="Pulp &amp; Paper">
+      <img
+        src="upload/blocchi/cr_X1877fotoJPG_600x4501-1X_pulp-paper.jpg"
+        alt="Mechanical Seals For The Paper-Making Sector"
+      />
+      <div class="txt">
+        <div class="txt-t">
+          <div class="txt-tc">Pulp &amp; Paper</div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="item">
+    <a href="industries/1875/chemical.html" title="Chemical">
+      <img
+        src="upload/blocchi/cr_X1875fotoJPG_600x4501-1X_pharma.jpg"
+        alt="Mechanical Seals for Chemical Sector"
+      />
+      <div class="txt">
+        <div class="txt-t">
+          <div class="txt-tc">Chemical</div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="item">
+    <a href="industries/1874/pharmaceutical.html" title="Pharmaceutical">
+      <img
+        src="upload/blocchi/cr_X1874fotoJPG_600x4501-1X_pharma_3.jpg"
+        alt="Mechanical Seals For The Pharmaceutical Sector"
+      />
+      <div class="txt">
+        <div class="txt-t">
+          <div class="txt-tc">Pharmaceutical</div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="item">
+    <a
+      href="industries/1773/www-and-dewatering.html"
+      title="W&amp;WW and Dewatering"
+    >
+      <img
+        src="upload/blocchi/cr_X1773fotoJPG_600x4501-1X_general_process.jpg"
+        alt="W&amp;WW and Dewatering"
+      />
+      <div class="txt">
+        <div class="txt-t">
+          <div class="txt-tc">W&amp;WW and Dewatering</div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="item">
+    <a
+      href="industries/2564/refrigeration-industry.html"
+      title="Refrigeration Industry"
+    >
+      <img
+        src="upload/blocchi/cr_X2564fotoJPG_600x4501-1X_AdobeStock-116177820.jpg"
+        alt="Refrigeration Industry"
+      />
+      <div class="txt">
+        <div class="txt-t">
+          <div class="txt-tc">Refrigeration Industry</div>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="container">
+  <div class="container">
+    <div class="container">
+      <div class="col-lg-3 col-md-5 col-sm-6 col-xs-12"></div>
+      <div class="col-lg-5 col-md-3 hidden-sm hidden-xs"></div>
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="row">
+          <ul class="share home addthis_toolbox addthis_default_style">
+            <li>Share this page</li>
+            <li>
+              <a
+                class="addthis_button_email"
+                href="javascript:void(0);"
+                title="email"
+                ><i class="fa fa-envelope"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                class="addthis_button_pinterest_share"
+                href="javascript:void(0);"
+                title="pinterest"
+                ><i class="fa fa-pinterest"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                class="addthis_button_linkedin"
+                href="javascript:void(0);"
+                title="linkedin"
+                ><i class="fa fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                class="addthis_button_twitter"
+                href="javascript:void(0);"
+                title="twitter"
+                ><i class="fa fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                class="addthis_button_facebook"
+                href="javascript:void(0);"
+                title="facebook"
+                ><i class="fa fa-facebook"></i
+              ></a>
+            </li>
+          </ul>
+
+          <div class="clear"></div>
+          <br /><br /><br />
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<%- include('Footer') %>

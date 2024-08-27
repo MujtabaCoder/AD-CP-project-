@@ -1,0 +1,270 @@
+<%- include('Header') %>
+    <div class="container">
+        <div class="col-xs-12">
+            <a href="#" title="Home">Home</a> > 
+                        <strong>Contacts</strong>
+        </div>
+    </div>
+</div>
+
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": [{
+		"@type": "ListItem",
+		"position": 1,
+		"name": "Home",
+		"item": "https://www.CHEM-PROOF.com/"
+	}
+		,{
+		"@type": "ListItem",
+		"position": 2,
+		"name": "More information about mechanical seals?"
+	}]
+}
+</script>    
+    <div class="testata">
+        <div class="item">
+            <picture>
+    <source media="(max-width: 599px)" srcset="https://www.CHEM-PROOF.com/upload/blocchi/cr_600_X1791fotoJPG_1680x4001-1X_contacts.jpg">
+    <img src="upload/blocchi/contactas.jpg" alt="Contacts">
+</picture><div class="txt-title"><h1>Contacts</h1></div>        </div>
+    </div>
+    
+    <!-- search -->
+<div class="search">
+    <div class="container">
+        <form name="search_form" action="https://www.CHEM-PROOF.com/products/search" method="get">
+            <input type="text" name="p" value="" placeholder="Search product">
+            <button type="submit" title="Search by product code / product name" onclick="if(document.search_form.p.value != '') { return true; } else { alert('Enter a search parameter'); return false; }"></button>
+        </form>
+    </div>
+</div>    
+    <div class="content">
+        <div class="container">
+                                <script type="application/ld+json">
+                        {
+                            "@context": "http://schema.org",
+                            "@type": "ContactPage",
+                            "name": "More information about mechanical seals?",
+                            "url": "https://www.CHEM-PROOF.com/contacts",
+                            "mainEntityOfPage": {
+                                "@type": "WebPage",
+                                "@id": "https://www.CHEM-PROOF.com/contacts"
+                            },
+                            "contactPoint": {
+                                "@type": "ContactPoint",
+                                "telephone": "+46418449940",
+                                "email": "sales@CHEM-PROOF.com",
+                                "contactType": "customer service",
+                                "areaServed": "EN",
+                                "availableLanguage": "English"
+                            },
+                            "sameAs": [
+                                "https://www.facebook.com/CHEM-PROOF",
+                                "https://www.linkedin.com/company/CHEM-PROOF-ab?trk=biz-companies-cym",
+                                "https://www.youtube.com/channel/UCv_Awts9LWjXG7vJU8G_T_w/videos"
+                            ]
+                        }
+                    </script>
+
+                    <div class="row content-row spacer100">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <!--
+                                Gino dalla pagina “contacts” puoi eliminare dalla colonna di sinistra il testo “CHEM-PROOF”?
+                                Dato che c’è il logo subito sotto è una ripetizione. Lasciamo solo il logo, allineato alla scritta “contact form”.
+                                grazie
+                            -->
+                            <!--div class="blk blk-title">
+                                <h3>CHEM-PROOF</h3>
+                            </div>
+                            <br><br><br--->
+                            <div class="blk blk-txt">
+                                <img src="img/logo-header.png" alt="CHEM-PROOF" style="margin-left: -20px;">
+                                <p>
+                                    <strong>CHEM-PROOF AB</strong>
+                                    <br />
+                                    <span>Visiting and delivery address:</span>
+                                    <br />
+                                    <span>Chapi </span>
+                                    <br />
+                                    <span>Gujrat</span>
+                                    <br /><br />
+                                    <span>Mailing address:</span>
+                                    <br />
+                                    <span>Mumbai</span>
+                                    <br />
+                                    <span>Maharashtra</span>
+                                    <br /><br />
+                                    <span>Phone: +91123456789</span>
+									                                    <br />
+                                    <span>Email:&nbsp;<a href="mailto:sales@CHEM-PROOF.com">sales@CHEM-PROOF.com</a></span>
+                                </p>
+								<br /><br />
+								<p>
+									<strong>CHEM-PROOF GmbH</strong>
+									<br />
+									<span>Mumbai</span>
+									<br />
+									<span>98673 Maharashtra</span>
+									<br />
+									<span>India</span>
+									<br />
+									<span>Phone: +91123456789</span>
+									<br />
+									<span>Email: <a href="mailto:sales.india@CHEM-PROOF.com">sales.india@CHEM-PROOF.com</a></span>
+								</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="blk blk-title">
+                                <h3>Contact form</h3>
+                            </div>
+                            <br><br><br>
+                            <form name="form_contatti" id="form_contatti" class="form" action="https://www.CHEM-PROOF.com/contacts/result" method="post">
+                                <input name="nome" type="text" placeholder="Name *" /><br />
+                                <input name="cognome" type="text" placeholder="Surname *" /><br />
+                                <input name="email" type="text" placeholder="E-mail *" /><br />
+                                <input name="telefono" type="text" placeholder="Telephone *" /><br />
+                                <input name="indirizzo" type="text" placeholder="Address" /><br />
+                                <input name="localita" type="text" placeholder="City" /><br />
+                                <input name="cap" type="text" placeholder="Postal/Zip code" /><br />
+                                <input name="provincia" type="text" placeholder="Province/State" /><br />
+                                <textarea name="messaggio" cols="" rows="" placeholder="Message"></textarea><br />
+                                <div class="clear"></div>
+                                
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" style="padding-left: 0; padding-right: 0;">
+                                    <input name="code" id="code" type="text" placeholder="Antispam Code *" />
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" style="padding-left: 0;">
+                                    <div class="blk blk-txt">
+                                        <img src="utilities/captcha.png" alt="captcha" id="captcha">
+                                        <a href="javascript:void(0);" class="capthca-btn" id="captcha-refresh" title="refresh the antispam code"><i class="fa fa-refresh"></i></a>
+                                    </div>
+                                </div>
+                                
+                                <div class="clear"></div>
+                                <input type="checkbox" name="accetto" id="accetto" class="styled" /> <p>I have read and agree to the Privacy Policy * (<a href="privacy.html" class="privacy" target="_blank" title="Info">Info</a>)</p>
+                                <div class="clear"></div>
+                                <input type="checkbox" name="iscrivimi_newsletter" id="iscrivimi_newsletter" class="styled" /> <p>Subscribe to our newsletter</p>
+                                <div class="clear"><br/></div>
+                                
+                                <input type="text" id="fred" name="fred" style="visibility: hidden;"/>
+                                <a href="javascript:void(0);" onClick="javascript:contatti_form();" class="btn float-left" title="send">send</a>
+                            </form>
+                            <script language="javascript">
+                                $(document).ready(function() {
+                                    $("#captcha-refresh").click(function () {
+                                        $("#captcha").attr("src", "utilities/captcha0a6d.png?rand=" + Math.random());
+                                        return false;
+                                    });
+                                });
+                                
+                                function contatti_form() {
+                                    var ok = true;
+                                    var F = eval("document.form_contatti");
+                                    
+                                    if(ok == true) {
+                                        var nome = F.nome.value;
+                                        if(nome == ""){
+                                            alert("You must enter a value in the NAME field.");
+                                            F.nome.focus();
+                                            ok = false;
+                                        }
+                                    }
+                                    
+                                    if(ok == true) {
+                                        var cognome = F.cognome.value;
+                                        if(cognome == ""){
+                                            alert("You must enter a value in the SURNAME field.");
+                                            F.cognome.focus();
+                                            ok = false;
+                                        }
+                                    }
+                                    
+                                    if(ok == true) {
+                                        var stringa = F.email.value;
+                                        if(((stringa.length-stringa.lastIndexOf('.'))>6)||((stringa.length-stringa.lastIndexOf('.')) < 3)||(stringa.indexOf('@')<0)||(stringa.indexOf('@')!=stringa.lastIndexOf('@'))||((stringa.lastIndexOf('.'))-(stringa.lastIndexOf('@'))<3)) {
+                                            alert("You must enter a valid value in the E-MAIL field.");
+                                            F.email.focus();
+                                            ok = false;
+                                        }
+                                    }
+                                    
+                                    if(ok == true) {
+                                        var telefono = F.telefono.value;
+                                        if(telefono == ""){
+                                            alert("You must enter a value in the TELEPHONE field.");
+                                            F.telefono.focus();
+                                            ok = false;
+                                        }
+                                    }
+                                    
+                                    if(ok == true) {
+                                        var code = F.code.value;
+                                        if(code == ""){
+                                            alert("You must enter a value in the ANTISPAM field.");
+                                            F.code.focus();
+                                            ok = false;
+                                        }
+                                    }
+                                    
+                                    if(ok == true) {
+                                        var accetto = F.accetto;
+                                        if(accetto.checked == false){
+                                            alert("To submit the form you must accept the clause concerning the processing of personal data.");
+                                            F.accetto.focus();
+                                            ok = false;
+                                        }
+                                    }
+                                    
+                                    if(ok) {
+                                        var url = "utilities/controller_captchad41d.html?";
+                                        var pars = "code="+encodeURIComponent($('#code').val());
+                                        $.ajax({
+                                            type:"GET",
+                                            url:url,
+                                            data:pars,
+                                            success: function(ResponseText) {
+                                                var arr_response=ResponseText.split("|");
+                                                if(arr_response[0] == "ko") {
+                                                    alert("The ANTISPAM field does not contain a valid value.");
+                                                }
+                                                if(arr_response[0] == "ok") {
+                                                    eval("document.form_contatti.submit()");
+                                                }
+                                            }
+                                        });
+                                    }
+                                }
+                                </script> 
+                        </div>
+                    </div>
+                    
+                <div class="row content-row spacer100">
+                    <div class="col-xs-12">
+                                <div class="blk blk-map">
+                                    
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120444.8866221827!2d72.75681494335937!3d19.373365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a587b8024b2b%3A0x53710d0a4343f981!2sChem-Proof%20Pumps%20India%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1724501984750!5m2!1sen!2sin"  width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </div></div>
+                </div>        </div>
+        <div class="container">
+    <div class="col-lg-3 col-md-5 col-sm-6 col-xs-12"></div>
+    <div class="col-lg-5 col-md-3 hidden-sm hidden-xs"></div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="row">
+            <ul class="share  addthis_toolbox addthis_default_style">
+                <li>Share this page</li>
+                <li><a class="addthis_button_email" href="javascript:void(0);" title="email"><i class="fa fa-envelope"></i></a></li>
+                                <li><a class="addthis_button_pinterest_share" href="javascript:void(0);" title="pinterest"><i class="fa fa-pinterest"></i></a></li>
+                <li><a class="addthis_button_linkedin" href="javascript:void(0);" title="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                <li><a class="addthis_button_twitter" href="javascript:void(0);" title="twitter"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="addthis_button_facebook" href="javascript:void(0);" title="facebook"><i class="fa fa-facebook"></i></a></li>
+            </ul>
+                    </div>
+    </div>
+</div>
+<div class="clear"></div>    </div>
+    
+<%- include('Footer') %>

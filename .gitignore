@@ -1,0 +1,47 @@
+# Node.js dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Log files
+*.log
+
+# Environment variables
+.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE/editor configurations
+.vscode/
+.idea/
+
+# Dependency directories
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Optional directories and files
+coverage/
+*.tgz
+*.lock
+
+# Ignore compiled files
+*.class
+*.o
+*.out
+*.pyc
+*.pyo
+
+# Ignore temporary files
+*.swp
+*.swo
+*.swn
+
+# Ignore test results
+*.xml
+*.html
+*.json
